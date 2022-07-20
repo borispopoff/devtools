@@ -5,6 +5,8 @@
 (which-function-mode t)
 (setq-default read-file-name-completion-ignore-case t)
 (add-to-list 'auto-mode-alist '("\\.T\\'" . c++-mode))
+(setq find-program "C:\\msys64\\usr\\bin\\find.exe")
+(setq grep-program "C:\\msys64\\usr\\bin\\grep.exe")
 
 (setq-default c-basic-offset 4
               tab-width 4
