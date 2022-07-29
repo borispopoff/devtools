@@ -1,3 +1,9 @@
+(ivy-mode)
+(counsel-mode)
+
+(global-set-key (kbd "C-x p o") 'projectile-find-file)
+(global-set-key (kbd "C-x p g") 'rg-project)
+
 (setq frame-title-format `("%b %f"))
 
 (show-paren-mode t)
