@@ -19,6 +19,12 @@
               indent-tabs-mode t
 			  c-default-style "k&r")
 
+(defun flip-shade ()
+   "Flip lightness shade."
+   (interactive)
+   (invert-face 'default)
+   (invert-face 'hl-line))
+
 (defun remove-newlines-in-region ()
   "Removes all newlines in the region."
   (interactive)
