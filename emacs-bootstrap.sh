@@ -6,6 +6,7 @@
 
 mkdir /c/emacs/
 
+# autoconf may be missing here
 pacman -S --needed base-devel \
   mingw-w64-x86_64-toolchain \
   mingw-w64-x86_64-xpm-nox \
