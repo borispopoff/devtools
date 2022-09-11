@@ -4,6 +4,8 @@
 # see also nt/INSTALL.W64
 # https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/
 
+mkdir /c/emacs/
+
 pacman -S --needed base-devel \
   mingw-w64-x86_64-toolchain \
   mingw-w64-x86_64-xpm-nox \
