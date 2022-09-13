@@ -41,6 +41,22 @@
     (goto-char (point-min))
     (while (search-forward "\n" nil t) (replace-match "\",\n" nil t))))
 
+(defun dos2unix ()
+  "replace \ -> /."
+  (interactive)
+  (save-restriction
+    (narrow-to-region (point) (mark))
+    (goto-char (point-min))
+    (while (search-forward "\\" nil t) (replace-match "\/" nil t))))
+
+(defun unix2dos ()
+  "replace / -> \."
+  (interactive)
+  (save-restriction
+    (narrow-to-region (point) (mark))
+    (goto-char (point-min))
+    (while (search-forward "\/" nil t) (replace-match "\\" nil t))))
+
 ;; ============================================================================
 ;; packages
 (require 'package)
