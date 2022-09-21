@@ -1,6 +1,6 @@
 (global-set-key (kbd "C-x p o") 'projectile-find-file)
-(global-set-key (kbd "C-x p g") 'projectile-ripgrep)
-;; (global-set-key (kbd "C-x p g") 'rg-project)
+;; (global-set-key (kbd "C-x p g") 'projectile-ripgrep)
+(global-set-key (kbd "C-x p g") 'rg-project)
 
 (setq frame-title-format `("%b %f"))
 
