@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# bootstrap emacs on msys2
+# single command to produce a working, self contained installation of emacs on msys2
 # see also nt/INSTALL.W64
 # https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/
 
@@ -35,7 +35,7 @@ git clone git://git.savannah.gnu.org/emacs.git
 
 cd emacs
 # ommiting this creates problems during compilation
-# apparently some files are corrupted by the conversion
+# apparently some files are corrupted by the automatic conversion
 git config core.autocrlf false
 
 # creates the configure script
