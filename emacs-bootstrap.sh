@@ -10,7 +10,7 @@ mkdir /c/emacs/
 # list of prerequisite libraries and tools
 # required for compilation;
 # autoconf may be missing here
-pacman -S --needed base-devel \
+pacman -Sy --needed base-devel \
   mingw-w64-x86_64-toolchain \
   mingw-w64-x86_64-xpm-nox \
   mingw-w64-x86_64-libtiff \
@@ -28,7 +28,7 @@ pacman -S --needed base-devel \
 
 # there is no git in the default config.
 # need to install it
-pacman -S git
+pacman -Sy git
 
 # get the source tree
 git clone git://git.savannah.gnu.org/emacs.git
