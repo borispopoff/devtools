@@ -4,8 +4,11 @@
 # see also nt/INSTALL.W64
 # https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/
 
+# the directory where the binary will be installed later
 mkdir /c/emacs/
 
+# list of prerequisite libraries and tools
+# required for compilation;
 # autoconf may be missing here
 pacman -S --needed base-devel \
   mingw-w64-x86_64-toolchain \
@@ -23,19 +26,29 @@ pacman -S --needed base-devel \
   mingw-w64-x86_64-zlib \
   mingw-w64-x86_64-harfbuzz
 
+# there is no git in the default config.
+# need to install it
 pacman -S git
 
+# get the source tree
 git clone git://git.savannah.gnu.org/emacs.git
 
 cd emacs
+# ommiting this creates problems during compilation
+# apparently some files are corrupted by the conversion
 git config core.autocrlf false
 
+# creates the configure script
 ./autogen.sh
+# configure build
 PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ./configure --without-imagemagick --without-dbus --without-pop
+# build and install
 make -j8
 make install prefix=/c/emacs
 
-
+# having this libraries where the binary is makes the package self contained
+# and not dependent on the msys installation.
+# it can be then copied to a machine without msys and will just run
 cp /mingw64/bin/{libwinpthread-*.dll,libXpm-noX*.dll,libdbus-*.dll} /c/emacs/bin
 cp /mingw64/bin/{libgomp-*.dll,libgcc_s_seh-*.dll,libglib-*.dll} /c/emacs/bin
 cp /mingw64/bin/{libintl-*.dll,libiconv-*.dll,libgobject-*.dll} /c/emacs/bin
