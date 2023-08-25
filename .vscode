@@ -5,14 +5,25 @@
     "workbench.colorCustomizations": {
         "[*Light*]": {
 
-            "editor.background": "#f5fffa",
+            "editor.background": "#fffff0",
             "editor.foreground": "#000000",
-            "titleBar.activeBackground": "#888888",
-            "titleBar.inactiveBackground": "#cccccc",
-            "sideBar.background": "#cccccc",
-            "tab.inactiveBackground": "#cccccc"
+            "titleBar.activeBackground": "#8b8b83",
+            "titleBar.inactiveBackground": "#eeeee0",
+            "sideBar.background": "#eeeee0",
+            "tab.inactiveBackground": "#eeeee0"
         },
     },
+    // "workbench.colorCustomizations": {
+    //     "[*Light*]": {
+
+    //         "editor.background": "#f5fffa",
+    //         "editor.foreground": "#000000",
+    //         "titleBar.activeBackground": "#888888",
+    //         "titleBar.inactiveBackground": "#cccccc",
+    //         "sideBar.background": "#cccccc",
+    //         "tab.inactiveBackground": "#cccccc"
+    //     },
+    // },
     "editor.tokenColorCustomizations": {
         "[*Dark*]": {
 
