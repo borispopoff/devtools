@@ -8,7 +8,7 @@
             "editor.background": "#fffff0",
             "editor.foreground": "#000000",
             "titleBar.activeBackground": "#8b8b83",
-            "titleBar.inactiveBackground": "#eeeee0",
+            "titleBar.inactiveBackground": "#cdcdc1",
             "sideBar.background": "#eeeee0",
             "tab.inactiveBackground": "#eeeee0"
         },
