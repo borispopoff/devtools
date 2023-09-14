@@ -1,3 +1,7 @@
+
+(customize-set-variable 'tramp-syntax 'simplified)
+(setq tramp-default-method "plink")
+
 (setq ring-bell-function 'ignore)
 
 (global-set-key (kbd "C-x p o") 'projectile-find-file)
