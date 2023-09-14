@@ -1,7 +1,0 @@
-{
-    "telemetry.telemetryLevel": "off",
-    "editor.minimap.enabled": false,
-    "editor.fontFamily": "'Iosevka Expanded', Consolas, 'Courier New', monospace",
-    "editor.guides.indentation": false,
-    "workbench.colorTheme": "Default Light Modern",
-}
