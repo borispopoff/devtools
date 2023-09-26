@@ -1,12 +1,14 @@
 
 (customize-set-variable 'tramp-syntax 'simplified)
-(setq tramp-default-method "plink")
+;; in case ssh/scp is not available
+;; (setq tramp-default-method "plink")
 
+(setq visible-bell 1)
 (setq ring-bell-function 'ignore)
 
-(global-set-key (kbd "C-x p o") 'projectile-find-file)
+;; (global-set-key (kbd "C-x p o") 'projectile-find-file)
 ;; (global-set-key (kbd "C-x p g") 'projectile-ripgrep)
-(global-set-key (kbd "C-x p g") 'rg-project)
+;; (global-set-key (kbd "C-x p g") 'rg-project)
 
 (setq frame-title-format `("%b %f"))
 
