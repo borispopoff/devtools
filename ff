@@ -1,0 +1,5 @@
+#!/bin/ksh
+
+## find . | ~/bin/rg -i "$@"
+## find . | grep -i "$@"
+rg --files . | ~/bin/rg -i "$@"
