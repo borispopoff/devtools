@@ -6,12 +6,6 @@
 (setq visible-bell 1)
 (setq ring-bell-function 'ignore)
 
-;; (global-set-key (kbd "C-x p o") 'projectile-find-file)
-;; (global-set-key (kbd "C-x p g") 'projectile-ripgrep)
-;; (global-set-key (kbd "C-x p g") 'rg-project)
-
-(setq frame-title-format `("%b %f"))
-
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode t)
 (show-paren-mode t)
@@ -27,12 +21,6 @@
               tab-width 4
               indent-tabs-mode t
 			  c-default-style "k&r")
-
-(defun flip-shade ()
-   "Flip lightness shade."
-   (interactive)
-   (invert-face 'default)
-   (invert-face 'hl-line))
 
 (defun remove-newlines-in-region ()
   "Removes all newlines in the region."
@@ -79,8 +67,3 @@
      (set-window-buffer w1 w2b)
      (set-window-buffer w2 w1b)))
 
-;; ============================================================================
-;; packages
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
