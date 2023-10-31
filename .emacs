@@ -1,4 +1,9 @@
 
+;; :-)
+(set-face-background 'tool-bar "#99e9e9")
+(set-background-color "#ffffea")
+
+;; magic trick to get tramp working for me
 (customize-set-variable 'tramp-syntax 'simplified)
 ;; in case ssh/scp is not available
 ;; (setq tramp-default-method "plink")
