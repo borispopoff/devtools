@@ -26,7 +26,7 @@
 (defun writing-mode ()
   "Use proportional font"
   (interactive)
-  (set-face-font 'default "Go-14"))
+  (set-face-font 'default "Go-12"))
 
 (defun fixed-mode ()
   "Use fixed font"
