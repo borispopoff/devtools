@@ -28,6 +28,11 @@
   (interactive)
   (set-face-font 'default "Go-14"))
 
+(defun fixed-mode ()
+  "Use fixed font"
+  (interactive)
+  (set-face-font 'default "Iosevka Extended-12"))
+
 (defun ff ()
   "find file at point"
   (interactive)
