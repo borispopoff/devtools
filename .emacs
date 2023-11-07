@@ -1,8 +1,4 @@
 
-;; :-)
-(set-face-background 'tool-bar "#99e9e9")
-(set-background-color "#ffffea")
-
 ;; magic trick to get tramp working for me
 (customize-set-variable 'tramp-syntax 'simplified)
 ;; in case ssh/scp is not available
@@ -26,6 +22,11 @@
               tab-width 4
               indent-tabs-mode t
 			  c-default-style "k&r")
+
+(defun writing-mode ()
+  "Use proportional font"
+  (interactive)
+  (set-face-font 'default "Go-14"))
 
 (defun ff ()
   "find file at point"
