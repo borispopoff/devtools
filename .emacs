@@ -30,16 +30,6 @@
               indent-tabs-mode t
 			  c-default-style "k&r")
 
-(defun writing-mode ()
-  "Use proportional font"
-  (interactive)
-  (set-face-font 'default "Go-12"))
-
-(defun fixed-mode ()
-  "Use fixed font"
-  (interactive)
-  (set-face-font 'default "Iosevka Extended-12"))
-
 (defun ff ()
   "find file at point"
   (interactive)
