@@ -30,11 +30,6 @@
               indent-tabs-mode t
 			  c-default-style "k&r")
 
-(defun ff ()
-  "find file at point"
-  (interactive)
-  (find-file-at-point))
-
 (defun remove-newlines-in-region ()
   "Removes all newlines in the region."
   (interactive)
