@@ -1,4 +1,9 @@
 
+;; (add-to-list 'default-frame-alist '(height . 32))
+;; (add-to-list 'default-frame-alist '(width . 80))
+(set-face-background 'default "#ffffea")
+(set-face-background 'tool-bar "#99e9e9")
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
