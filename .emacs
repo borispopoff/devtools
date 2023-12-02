@@ -1,4 +1,18 @@
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(global-font-lock-mode nil)
+ '(inhibit-startup-screen t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Courier New" :foundry "outline" :slant normal :weight regular :height 120 :width normal)))))
+
 ;; (add-to-list 'default-frame-alist '(height . 32))
 ;; (add-to-list 'default-frame-alist '(width . 80))
 (set-face-background 'default "#ffffea")
@@ -10,11 +24,6 @@
 ;; and `package-pinned-packages`. Most users will not need or want to do this.
 ;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
-
-;; magic trick to get tramp working for me
-(customize-set-variable 'tramp-syntax 'simplified)
-;; in case ssh/scp is not available
-;; (setq tramp-default-method "plink")
 
 (setq visible-bell 1)
 (setq ring-bell-function 'ignore)
@@ -35,15 +44,23 @@
               indent-tabs-mode t
 			  c-default-style "k&r")
 
-(defun remove-newlines-in-region ()
+(defun make-row ()
   "Removes all newlines in the region."
   (interactive)
   (save-restriction
     (narrow-to-region (point) (mark))
     (goto-char (point-min))
-    (while (search-forward "\n" nil t) (replace-match " & " nil t))))
+    (while (search-forward "\n" nil t) (replace-match " " nil t))))
 
-(defun newline-to-list ()
+(defun make-col ()
+  "Removes all newlines in the region."
+  (interactive)
+  (save-restriction
+    (narrow-to-region (point) (mark))
+    (goto-char (point-min))
+    (while (search-forward " " nil t) (replace-match "\n" nil t))))
+
+(defun make-col-list ()
   "Removes all newlines in the region."
   (interactive)
   (save-restriction
@@ -52,7 +69,7 @@
     (while (search-forward "\n" nil t) (replace-match "\",\n" nil t))))
 
 (defun dos2unix ()
-  "replace \ -> /."
+  "dos2unix for strings."
   (interactive)
   (save-restriction
     (narrow-to-region (point) (mark))
@@ -60,7 +77,7 @@
     (while (search-forward "\\" nil t) (replace-match "\/" nil t))))
 
 (defun unix2dos ()
-  "replace / -> \."
+  "unix2dos for strings."
   (interactive)
   (save-restriction
     (narrow-to-region (point) (mark))
