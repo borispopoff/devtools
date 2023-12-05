@@ -6,12 +6,6 @@
  ;; If there is more than one, they won't work right.
  '(global-font-lock-mode nil)
  '(inhibit-startup-screen t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Courier New" :foundry "outline" :slant normal :weight regular :height 120 :width normal)))))
 
 ;; (add-to-list 'default-frame-alist '(height . 32))
 ;; (add-to-list 'default-frame-alist '(width . 80))
