@@ -22,8 +22,7 @@
 (setq visible-bell 1)
 (setq ring-bell-function 'ignore)
 
-(setq-default tab-width 4)
-(setq-default indent-tabs-mode t)
+(global-hl-line-mode 1)
 (show-paren-mode t)
 (which-function-mode t)
 (add-to-list 'auto-mode-alist '("\\.T\\'" . c++-mode))
