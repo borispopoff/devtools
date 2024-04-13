@@ -1,9 +1,0 @@
-// useful vscode settings
-{
-    "extensions.ignoreRecommendations": true,
-    "telemetry.telemetryLevel": "off",
-    "workbench.colorTheme": "ivory-v2",
-    "editor.hover.enabled": false,
-    "editor.minimap.enabled": false,
-    "window.titleBarStyle": "native",
-}
