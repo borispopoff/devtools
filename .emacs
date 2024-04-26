@@ -37,6 +37,18 @@
               indent-tabs-mode t
 			  c-default-style "k&r")
 
+(defun dm ()
+  "dark mode"
+  (interactive)
+  (set-background-color "black")
+  (set-foreground-color "palegreen"))
+
+(defun lm ()
+  "light mode"
+  (interactive)
+  (set-background-color "white")
+  (set-foreground-color "black"))
+
 (defun make-row ()
   "Removes all newlines in the region."
   (interactive)
