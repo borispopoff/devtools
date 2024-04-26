@@ -65,7 +65,7 @@
     (goto-char (point-min))
     (while (search-forward " " nil t) (replace-match "\n" nil t))))
 
-(defun make-col-list ()
+(defun make-row-list ()
   "Removes all newlines in the region."
   (interactive)
   (save-restriction
