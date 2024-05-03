@@ -1,6 +1,7 @@
 @echo off
 
 :: find file in workspace
+:: nothing revolutionary, just very easy to type
 
 :: MIT License
 :: 
