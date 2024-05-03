@@ -27,7 +27,7 @@
 
 
 :: :: if there is no rg, use std tools
-:: find . | rg -i %*
-:: dir /S /W /B . | rg -i %*
+:: find . | grep -i %*
+:: dir /S /W /B . | grep -i %*
 
 rg --files --no-ignore-vcs . | rg -i %*

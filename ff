@@ -27,7 +27,6 @@
 
 
 ## ## if there is no rg, use std tools
-## find . | rg -i "$@"
 ## find . | grep -i "$@"
 
 rg --files --no-ignore-vcs . | rg -i "$@"
