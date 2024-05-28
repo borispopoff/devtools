@@ -41,7 +41,7 @@
   "dark mode"
   (interactive)
   (set-background-color "black")
-  (set-foreground-color "palegreen"))
+  (set-foreground-color "green"))
 
 (defun lm ()
   "light mode"
