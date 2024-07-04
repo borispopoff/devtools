@@ -1,0 +1,8 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "telemetry.telemetryLevel": "off",
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Iosevka Expanded",
+    "workbench.colorTheme": "Visual Studio Light",
+    // "workbench.sideBar.location": "right",
+}
