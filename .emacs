@@ -1,4 +1,7 @@
 
+;; (setq acme-theme-black-fg t)
+;; (load-theme 'acme t)
+
 (defun ll ()
   "linux env"
   (interactive)
@@ -34,9 +37,6 @@
 (setq visible-bell 1)
 (setq ring-bell-function 'ignore)
 
-(global-hl-line-mode 1)
-(show-paren-mode t)
-(which-function-mode t)
 (add-to-list 'auto-mode-alist '("\\.T\\'" . c++-mode))
 
 ;; (setq find-program "C:\\msys64\\usr\\bin\\find.exe")
