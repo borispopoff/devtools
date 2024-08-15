@@ -34,9 +34,6 @@
 ;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
-(setq visible-bell 1)
-(setq ring-bell-function 'ignore)
-
 (add-to-list 'auto-mode-alist '("\\.T\\'" . c++-mode))
 
 ;; (setq find-program "C:\\msys64\\usr\\bin\\find.exe")
