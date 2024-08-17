@@ -67,7 +67,7 @@
     (while (search-forward "\n" nil t) (replace-match " " nil t))))
 
 (defun make-col ()
-  "Removes all newlines in the region."
+  "Turns all spaces in region into newlines."
   (interactive)
   (save-restriction
     (narrow-to-region (point) (mark))
@@ -75,7 +75,7 @@
     (while (search-forward " " nil t) (replace-match "\n" nil t))))
 
 (defun make-row-list ()
-  "Removes all newlines in the region."
+  "Turns all newlines in region into comma followed by a newline."
   (interactive)
   (save-restriction
     (narrow-to-region (point) (mark))
