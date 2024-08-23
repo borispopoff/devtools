@@ -4,9 +4,8 @@
 # see also nt/INSTALL.W64
 # https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/
 
-# the directory where the binary will be installed later
-mkdir /c/emacs/
-
+################
+## PREREQUISITES
 # list of prerequisite libraries and tools
 # required for compilation;
 # autoconf may be missing here
@@ -30,9 +29,15 @@ pacman -Sy --needed base-devel \
 # need to install it
 pacman -Sy git
 
+
+################
+## SOURCE
 # get the source tree
 git clone git://git.savannah.gnu.org/emacs.git
 
+
+################
+## BUILD
 cd emacs
 # ommiting this creates problems during compilation
 # apparently some files are corrupted by the automatic conversion
@@ -44,6 +49,12 @@ git config core.autocrlf false
 PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ./configure --without-imagemagick --without-dbus --without-pop
 # build and install
 make -j8
+
+
+################
+## INSTALLATION
+# the directory where the binary will be installed later
+mkdir /c/emacs/
 make install prefix=/c/emacs
 
 # having this libraries where the binary is makes the package self contained
