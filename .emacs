@@ -1,7 +1,4 @@
 
-;; (setq acme-theme-black-fg t)
-;; (load-theme 'acme t)
-
 (defun ll ()
   "linux env"
   (interactive)
@@ -21,11 +18,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka Extended" :foundry "outline" :slant normal :weight regular :height 113 :width normal)))))
-
-;; (add-to-list 'default-frame-alist '(height . 32))
-;; (add-to-list 'default-frame-alist '(width . 80))
-;; (set-face-background 'default "#ffffea")
-;; (set-face-background 'tool-bar "#99e9e9")
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -56,6 +48,13 @@
   "light mode"
   (interactive)
   (set-background-color "white")
+  (set-foreground-color "black"))
+
+(defun gm ()
+  "light mode"
+  (interactive)
+  (set-face-background 'tool-bar "aquamarine4")
+  (set-background-color "aquamarine")
   (set-foreground-color "black"))
 
 (defun make-row ()
