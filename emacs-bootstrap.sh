@@ -57,7 +57,7 @@ make -j8
 ## INSTALLATION
 # the directory where the binary will be installed later
 mkdir /c/emacs/
-make install prefix=/c/emacs
+make install prefix=/c/emacs -j8
 
 # having this libraries where the binary is makes the package self contained
 # and not dependent on the msys installation.
