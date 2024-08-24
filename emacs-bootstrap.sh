@@ -8,8 +8,9 @@
 ## PREREQUISITES
 # list of prerequisite libraries and tools
 # required for compilation;
-# autoconf may be missing here
-pacman -Sy --needed base-devel \
+pacman -Sy --needed \
+  base-devel \
+  autoconf \
   mingw-w64-x86_64-toolchain \
   mingw-w64-x86_64-xpm-nox \
   mingw-w64-x86_64-libtiff \
