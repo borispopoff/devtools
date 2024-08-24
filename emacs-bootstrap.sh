@@ -34,6 +34,7 @@ pacman -Sy git
 ################
 ## SOURCE
 # get the source tree
+# alternatively git clone https://github.com/borispopoff/emacs.git
 git clone git://git.savannah.gnu.org/emacs.git
 
 
