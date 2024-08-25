@@ -55,7 +55,7 @@ git config core.autocrlf false
 # configure build
 ## PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ./configure --without-imagemagick --without-dbus --without-pop
 PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ./configure --without-dbus
-# build and install
+# build
 make -j8
 
 
