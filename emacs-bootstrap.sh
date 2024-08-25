@@ -61,7 +61,7 @@ make -j8
 
 ################
 ## INSTALLATION
-# the directory where the binary will be installed later
+# the directory where the binary will be installed
 mkdir /c/emacs/
 make install prefix=/c/emacs -j8
 
