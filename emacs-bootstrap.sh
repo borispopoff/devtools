@@ -53,7 +53,8 @@ git config core.autocrlf false
 # creates the configure script
 ./autogen.sh
 # configure build
-PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ./configure --without-imagemagick --without-dbus --without-pop
+## PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ./configure --without-imagemagick --without-dbus --without-pop
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig ./configure --without-dbus
 # build and install
 make -j8
 
