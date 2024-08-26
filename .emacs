@@ -73,7 +73,7 @@
     (goto-char (point-min))
     (while (search-forward " " nil t) (replace-match "\n" nil t))))
 
-(defun make-row-list ()
+(defun make-col-list ()
   "Turns all newlines in region into comma followed by a newline."
   (interactive)
   (save-restriction
