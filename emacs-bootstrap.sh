@@ -39,8 +39,9 @@ pacman -Sy --needed autoconf
 ################
 ## SOURCE
 # get the source tree
-# alternatively git clone https://github.com/borispopoff/emacs.git
-git clone git://git.savannah.gnu.org/emacs.git
+git clone https://github.com/borispopoff/emacs.git
+## alternatively 
+## git clone git://git.savannah.gnu.org/emacs.git
 
 
 ################
