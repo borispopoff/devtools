@@ -9,7 +9,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(global-font-lock-mode nil)
  '(inhibit-startup-screen t))
 
 (custom-set-faces
@@ -18,13 +17,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka Extended" :foundry "outline" :slant normal :weight regular :height 113 :width normal)))))
-
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
-;; and `package-pinned-packages`. Most users will not need or want to do this.
-;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(package-initialize)
 
 (add-to-list 'auto-mode-alist '("\\.T\\'" . c++-mode))
 
