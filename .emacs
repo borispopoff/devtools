@@ -34,6 +34,8 @@
 (defun dm ()
   "dark mode"
   (interactive)
+  (set-face-background 'tool-bar "aquamarine4")
+  (set-face-background 'mode-line "aquamarine4")
   (set-background-color "black")
   (set-foreground-color "green"))
 
