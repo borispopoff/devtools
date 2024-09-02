@@ -31,8 +31,8 @@
               indent-tabs-mode t
 			  c-default-style "k&r")
 
-(defun sgm ()
-  "dark mode"
+(defun sm ()
+  "slate grey mode"
   (interactive)
   (set-face-background 'tool-bar "aquamarine4")
   (set-face-background 'mode-line "aquamarine4")
