@@ -1,3 +1,4 @@
+set print pretty on
 set auto-load safe-path /
 set auto-load local-gdbinit on
 set pagination off
