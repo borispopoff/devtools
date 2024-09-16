@@ -31,19 +31,10 @@
               indent-tabs-mode t
 			  c-default-style "k&r")
 
-(defun sm ()
-  "slate grey mode"
-  (interactive)
-  (set-face-background 'tool-bar "aquamarine4")
-  (set-face-background 'mode-line "aquamarine4")
-  (set-background-color "lightslategrey")
-  (set-foreground-color "black"))
 
 (defun dm ()
   "dark mode"
   (interactive)
-  (set-face-background 'tool-bar "aquamarine4")
-  (set-face-background 'mode-line "aquamarine4")
   (set-background-color "black")
   (set-foreground-color "green"))
 
@@ -56,8 +47,6 @@
 (defun gm ()
   "light mode"
   (interactive)
-  (set-face-background 'tool-bar "aquamarine4")
-  (set-face-background 'mode-line "aquamarine4")
   (set-background-color "aquamarine")
   (set-foreground-color "black"))
 
