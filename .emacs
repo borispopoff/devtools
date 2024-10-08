@@ -1,6 +1,11 @@
 
 (global-font-lock-mode -1)
 
+(setq-default c-basic-offset 4
+              tab-width 4
+              indent-tabs-mode t
+			  c-default-style "k&r")
+
 (defun ll ()
   "linux env"
   (interactive)
@@ -26,11 +31,6 @@
 ;; (setq grep-program "C:\\msys64\\usr\\bin\\grep.exe")
 ;; (setq diff-program "C:\\msys64\\usr\\bin\\diff.exe")
 ;; (setq diff3-program "C:\\msys64\\usr\\bin\\diff3.exe")
-
-(setq-default c-basic-offset 4
-              tab-width 4
-              indent-tabs-mode t
-			  c-default-style "k&r")
 
 
 (defun dm ()
