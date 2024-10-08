@@ -1,6 +1,4 @@
 
-(set-face-background 'tool-bar "grey")
-
 (defun ll ()
   "linux env"
   (interactive)
