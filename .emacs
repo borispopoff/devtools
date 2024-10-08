@@ -1,4 +1,6 @@
 
+(global-font-lock-mode -1)
+
 (defun ll ()
   "linux env"
   (interactive)
