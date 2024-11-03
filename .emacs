@@ -1,11 +1,4 @@
 
-
-(set-face-background 'default "#ffffea")
-(set-face-background 'tool-bar "#ffffea")
-(set-face-background 'mode-line "lightskyblue")
-
-(global-font-lock-mode -1)
-
 (setq-default c-basic-offset 4
               tab-width 4
               indent-tabs-mode t
@@ -16,11 +9,16 @@
   (interactive)
   (dired "/plink:user@host:~"))
 
+(set-face-background 'default "#ffffea")
+(set-face-background 'tool-bar "#ffffea")
+(set-face-background 'mode-line "lightskyblue")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(global-font-lock-mode nil)
  '(inhibit-startup-screen t))
 
 (custom-set-faces
@@ -30,13 +28,10 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka Extended" :foundry "outline" :slant normal :weight regular :height 113 :width normal)))))
 
-(add-to-list 'auto-mode-alist '("\\.T\\'" . c++-mode))
-
 ;; (setq find-program "C:\\msys64\\usr\\bin\\find.exe")
 ;; (setq grep-program "C:\\msys64\\usr\\bin\\grep.exe")
 ;; (setq diff-program "C:\\msys64\\usr\\bin\\diff.exe")
 ;; (setq diff3-program "C:\\msys64\\usr\\bin\\diff3.exe")
-
 
 (defun dm ()
   "dark mode"
