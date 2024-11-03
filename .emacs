@@ -1,4 +1,9 @@
 
+
+(set-face-background 'default "#ffffea")
+(set-face-background 'tool-bar "#ffffea")
+(set-face-background 'mode-line "lightskyblue")
+
 (global-font-lock-mode -1)
 
 (setq-default c-basic-offset 4
