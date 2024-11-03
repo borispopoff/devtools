@@ -26,7 +26,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Iosevka Extended" :foundry "outline" :slant normal :weight regular :height 113 :width normal)))))
+ '(default ((t (:family "JetBrains Mono NL" :foundry "outline" :slant normal :weight regular :height 113 :width normal)))))
 
 ;; (setq find-program "C:\\msys64\\usr\\bin\\find.exe")
 ;; (setq grep-program "C:\\msys64\\usr\\bin\\grep.exe")
