@@ -33,24 +33,6 @@
 ;; (setq diff-program "C:\\msys64\\usr\\bin\\diff.exe")
 ;; (setq diff3-program "C:\\msys64\\usr\\bin\\diff3.exe")
 
-(defun dm ()
-  "dark mode"
-  (interactive)
-  (set-background-color "black")
-  (set-foreground-color "green"))
-
-(defun lm ()
-  "light mode"
-  (interactive)
-  (set-background-color "white")
-  (set-foreground-color "black"))
-
-(defun gm ()
-  "light mode"
-  (interactive)
-  (set-background-color "aquamarine")
-  (set-foreground-color "black"))
-
 (defun make-row ()
   "Removes all newlines in the region."
   (interactive)
