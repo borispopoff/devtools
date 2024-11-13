@@ -9,9 +9,12 @@
   (interactive)
   (dired "/plink:user@host:~"))
 
-(set-face-background 'default "lightyellow")
-(set-face-background 'tool-bar "lightyellow")
-(set-face-background 'mode-line "lightskyblue")
+;; (set-face-background 'default "black")
+;; (set-face-foreground 'default "lightskyblue")
+;; 
+;; (set-face-background 'default "lightyellow")
+;; (set-face-background 'tool-bar "lightyellow")
+;; (set-face-background 'mode-line "lightskyblue")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
