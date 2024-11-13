@@ -28,11 +28,6 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "JetBrains Mono NL" :foundry "outline" :slant normal :weight regular :height 120 :width normal)))))
 
-;; (setq find-program "C:\\msys64\\usr\\bin\\find.exe")
-;; (setq grep-program "C:\\msys64\\usr\\bin\\grep.exe")
-;; (setq diff-program "C:\\msys64\\usr\\bin\\diff.exe")
-;; (setq diff3-program "C:\\msys64\\usr\\bin\\diff3.exe")
-
 (defun make-row ()
   "Removes all newlines in the region."
   (interactive)
