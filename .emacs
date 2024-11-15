@@ -4,17 +4,26 @@
               indent-tabs-mode t
 			  c-default-style "k&r")
 
+(defun dm ()
+  "dark mode"
+  (interactive)
+  (set-face-background 'default "black")
+  (set-face-foreground 'default "lightskyblue")
+  (set-face-background 'mode-line "lightskyblue"))
+
+(defun lm ()
+  "light mode"
+  (interactive)
+  (set-face-background 'default "lightyellow")
+  (set-face-foreground 'default "black")
+  (set-face-background 'mode-line "lightskyblue"))
+
+(lm)
+
 (defun ll ()
   "linux env"
   (interactive)
   (dired "/plink:user@host:~"))
-
-;; (set-face-background 'default "black")
-;; (set-face-foreground 'default "lightskyblue")
-;; 
-;; (set-face-background 'default "lightyellow")
-;; (set-face-background 'tool-bar "lightyellow")
-;; (set-face-background 'mode-line "lightskyblue")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
