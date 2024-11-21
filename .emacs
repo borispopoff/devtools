@@ -1,8 +1,8 @@
 
-(setq-default c-basic-offset 4
-              tab-width 4
-              indent-tabs-mode t
-			  c-default-style "k&r")
+;; (setq-default c-basic-offset 4
+;;               tab-width 4
+;;               indent-tabs-mode nil
+;; 			  c-default-style "k&r")
 
 (defun dm ()
   "dark mode"
@@ -18,7 +18,7 @@
   (set-face-foreground 'default "black")
   (set-face-background 'mode-line "lightskyblue"))
 
-(lm)
+;; (lm)
 
 (defun ll ()
   "linux env"
@@ -81,15 +81,14 @@
     (while (search-forward "\/" nil t) (replace-match "\\" nil t))))
 
 (defun flip ()
-   "Transpose two windows.  If more or less than two windows are visible, error."
-   (interactive)
-   (unless (= 2 (count-windows))
-     (error "There are not 2 windows."))
-   (let* ((windows (window-list))
-          (w1 (car windows))
-          (w2 (nth 1 windows))
-          (w1b (window-buffer w1))
-          (w2b (window-buffer w2)))
-     (set-window-buffer w1 w2b)
-     (set-window-buffer w2 w1b)))
-
+  "Transpose two windows.  If more or less than two windows are visible, error."
+  (interactive)
+  (unless (= 2 (count-windows))
+    (error "There are not 2 windows."))
+  (let* ((windows (window-list))
+         (w1 (car windows))
+         (w2 (nth 1 windows))
+         (w1b (window-buffer w1))
+         (w2b (window-buffer w2)))
+    (set-window-buffer w1 w2b)
+    (set-window-buffer w2 w1b)))
