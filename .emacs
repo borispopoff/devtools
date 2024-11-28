@@ -1,32 +1,4 @@
 
-(global-font-lock-mode -1)
-
-;; (setq-default c-basic-offset 4
-;;               tab-width 4
-;;               indent-tabs-mode nil
-;; 			  c-default-style "k&r")
-
-(defun dm ()
-  "dark mode"
-  (interactive)
-  (set-face-background 'default "black")
-  (set-face-foreground 'default "lightskyblue")
-  (set-face-background 'mode-line "lightskyblue"))
-
-(defun lm ()
-  "light mode"
-  (interactive)
-  (set-face-background 'default "lightyellow")
-  (set-face-foreground 'default "black")
-  (set-face-background 'mode-line "lightskyblue"))
-
-;; (lm)
-
-(defun ll ()
-  "linux env"
-  (interactive)
-  (dired "/plink:user@host:~"))
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -40,6 +12,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "JetBrains Mono NL" :foundry "outline" :slant normal :weight regular :height 120 :width normal)))))
+
+(global-font-lock-mode -1)
+
+;; (setq-default c-basic-offset 4
+;;               tab-width 4
+;;               indent-tabs-mode nil
+;; 			  c-default-style "k&r")
+
+(defun ll ()
+  "linux env"
+  (interactive)
+  (dired "/plink:user@host:~"))
 
 (defun make-row ()
   "Removes all newlines in the region."
