@@ -1,4 +1,17 @@
 
+
+(defun dm ()
+  "dark mode"
+  (interactive)
+  (set-foreground-color "greenyellow")
+  (set-background-color "black"))
+(defun lm ()
+  "light mode"
+  (interactive)
+  (set-foreground-color "black")
+  (set-background-color "white"))
+(dm)
+
 ;; (defun ll ()
 ;;   "linux env"
 ;;   (interactive)
