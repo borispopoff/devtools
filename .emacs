@@ -1,44 +1,44 @@
+;;; -*- lexical-binding: t -*-
 
+(setq-default c-basic-offset 2
+              tab-width 2
+              indent-tabs-mode nil
+							c-default-style "bsd")
+;; (setq-default c-basic-offset 4
+;;               tab-width 4
+;;               indent-tabs-mode nil
+;; 			  c-default-style "k&r")
 
-(defun dm ()
-  "dark mode"
-  (interactive)
-  (set-foreground-color "greenyellow")
-  (set-background-color "black"))
-(defun lm ()
-  "light mode"
-  (interactive)
-  (set-foreground-color "black")
-  (set-background-color "white"))
-(dm)
+;; (setq default-input-method "MacOSX")
+(setq mac-command-modifier 'meta
+      mac-option-modifier nil
+      ;; mac-allow-anti-aliasing t
+      mac-command-key-is-meta t)
 
+;; ;; plink is used on windows via putty
 ;; (defun ll ()
 ;;   "linux env"
 ;;   (interactive)
 ;;   (dired "/plink:user@host:~"))
 
+;; ;; linux and macos
 ;; (defun ll ()
 ;;   "linux env"
 ;;   (interactive)
 ;;   (dired "/ssh:user@host:~"))
-
-;; (defun nn ()
-;;   "notes"
-;;   (interactive)
-;;   ;; (dired "~/Documents/notes")
-;;   (find-file "~/Documents/notes/notes.md")
-;;   (find-file-other-window "~/Documents/notes/wip.md"))
 
 ;; (defun dd ()
 ;;   "linux devenv"
 ;;   (interactive)
 ;;   (dired "/ssh:user@host:~/src"))
 
-(setq default-input-method "MacOSX")
-(setq mac-command-modifier 'meta
-      mac-option-modifier nil
-      mac-allow-anti-aliasing t
-      mac-command-key-is-meta t)
+;; (defun nn ()
+;;   "notes"
+;;   (interactive)
+;;   (find-file "~/Documents/notes/notes.md")
+;;   (find-file-other-window "~/Documents/notes/wip.md"))
+
+
 
 ;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
 (defun unfill-paragraph (&optional region)
@@ -61,18 +61,6 @@
     (fill-region beg end)))
 ;; Handy key definition
 (define-key global-map "\C-\M-Q" 'unfill-region)
-
-(global-font-lock-mode -1)
-(global-display-line-numbers-mode)
-(which-function-mode)
-(setq-default c-basic-offset 2
-              tab-width 2
-              indent-tabs-mode nil
-							c-default-style "bsd")
-;; (setq-default c-basic-offset 4
-;;               tab-width 4
-;;               indent-tabs-mode nil
-;; 			  c-default-style "k&r")
 
 (defun make-row ()
   "Removes all newlines in the region."
@@ -139,10 +127,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(magit)))
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "JetBrains Mono NL" :foundry "nil" :slant normal :weight regular :height 160 :width normal)))))
+ '(default ((t (:family "JetBrains Mono NL ExtraLight" :foundry "outline" :slant normal :weight ultra-light :height 120 :width normal)))))
+
