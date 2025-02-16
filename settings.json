@@ -1,0 +1,6 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "editor.fontFamily": "Jetbrains Mono NL Light",
+    "editor.fontSize": 14,
+    "extensions.ignoreRecommendations": true,
+}
