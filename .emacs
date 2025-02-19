@@ -23,6 +23,8 @@
 ;; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ;; SOFTWARE.
 
+(set-background-color "#eaeae5")
+
 (setq-default c-basic-offset 2
               tab-width 2
               indent-tabs-mode nil
