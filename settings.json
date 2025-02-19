@@ -3,4 +3,8 @@
     "editor.fontFamily": "Jetbrains Mono NL Light",
     "editor.fontSize": 14,
     "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorCustomizations": {
+        "editor.background": "#eaeae5"
+    }
 }
