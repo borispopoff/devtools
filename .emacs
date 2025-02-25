@@ -27,6 +27,30 @@
 (set-background-color "#000")
 (set-foreground-color "#eaeae5")
 
+;; ;; ;; Common C/C++ settings
+;; ;; (defun my-c-c++-common-hook ()
+;; ;;   (c-set-offset 'substatement-open 0)
+;; ;;   (c-set-offset 'brace-list-open 0))
+;; ;; 
+;; ;; ;; C specific settings
+;; ;; (defun my-c-mode-hook ()
+;; ;;   (c-set-style "linux")
+;; ;;   (setq c-basic-offset 8)
+;; ;;   (setq tab-width 8)
+;; ;;   (setq indent-tabs-mode t))
+;; ;; 
+;; ;; ;; C++ specific settings  
+;; ;; (defun my-c++-mode-hook ()
+;; ;;   (c-set-style "stroustrup") 
+;; ;;   (setq c-basic-offset 4)
+;; ;;   (setq tab-width 4)
+;; ;;   (setq indent-tabs-mode nil))
+;; ;; 
+;; ;; ;; Add hooks
+;; ;; (add-hook 'c-mode-common-hook 'my-c-c++-common-hook)
+;; ;; (add-hook 'c-mode-hook 'my-c-mode-hook)
+;; ;; (add-hook 'c++-mode-hook 'my-c++-mode-hook)
+
 (setq-default c-basic-offset 2
               tab-width 2
               indent-tabs-mode nil
