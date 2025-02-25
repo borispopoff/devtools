@@ -27,6 +27,23 @@
 (set-background-color "#000")
 (set-foreground-color "#eaeae5")
 
+
+;; ;; ;; C indentation style
+;; ;; (add-hook 'c-mode-hook
+;; ;;           (lambda ()
+;; ;;             (c-set-style "linux")  ; or any other style like "k&r", "gnu", etc.
+;; ;;             (setq c-basic-offset 8)
+;; ;;             (setq tab-width 8)
+;; ;;             (setq indent-tabs-mode t)))
+;; ;; 
+;; ;; ;; C++ indentation style
+;; ;; (add-hook 'c++-mode-hook
+;; ;;           (lambda ()
+;; ;;             (c-set-style "stroustrup")  ; or any other style
+;; ;;             (setq c-basic-offset 4)
+;; ;;             (setq tab-width 4)
+;; ;;             (setq indent-tabs-mode nil)))
+
 ;; ;; ;; Common C/C++ settings
 ;; ;; (defun my-c-c++-common-hook ()
 ;; ;;   (c-set-offset 'substatement-open 0)
