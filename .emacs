@@ -23,6 +23,8 @@
 ;; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ;; SOFTWARE.
 
+(global-font-lock-mode -1)
+
 ;; C/C++ Style Configuration
 (defun my-c-mode-common-hook ()
   ;; Allman style (braces on new lines)
