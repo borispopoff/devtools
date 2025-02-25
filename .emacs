@@ -28,6 +28,33 @@
 (set-foreground-color "#eaeae5")
 
 
+;; C/C++ Style Configuration
+(defun my-c-mode-common-hook ()
+  ;; Allman style (braces on new lines)
+  (c-set-style "bsd")  
+  
+  ;; Indent with 2 spaces instead of tabs
+  (setq-default indent-tabs-mode nil)
+  (setq-default tab-width 2)
+  (setq c-basic-offset 2)
+  
+  ;; Max instatement indent
+  (setq c-max-instatement-indent 70)
+  
+  ;; Padding around operators and keywords
+  (c-set-offset 'operator 'c-lineup-operator)
+  (c-set-offset 'arglist-intro '+)
+  (c-set-offset 'arglist-close 0)
+  
+  ;; Switch statement indentation
+  (c-set-offset 'case-label '+)
+  
+  ;; Keep one-line blocks and statements
+  (c-set-offset 'substatement-open 0)
+  
+  ;; Align pointer to name
+  (c-set-offset 'func-decl-cont 'c-lineup-java-throws))
+
 ;; ;; ;; C indentation style
 ;; ;; (add-hook 'c-mode-hook
 ;; ;;           (lambda ()
@@ -67,15 +94,6 @@
 ;; ;; (add-hook 'c-mode-common-hook 'my-c-c++-common-hook)
 ;; ;; (add-hook 'c-mode-hook 'my-c-mode-hook)
 ;; ;; (add-hook 'c++-mode-hook 'my-c++-mode-hook)
-
-(setq-default c-basic-offset 2
-              tab-width 2
-              indent-tabs-mode nil
-							c-default-style "bsd")
-;; (setq-default c-basic-offset 4
-;;               tab-width 4
-;;               indent-tabs-mode nil
-;; 			  c-default-style "k&r")
 
 ;; (setq default-input-method "MacOSX")
 (setq mac-command-modifier 'meta
