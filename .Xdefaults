@@ -1,2 +1,7 @@
 xterm*faceName: JetBrains Mono NL
 xterm*faceSize: 12
+xterm*reverseVideo: true
+emacs*faceName: JetBrains Mono NL
+emacs*faceSize: 12
+!! Mwm*foreground:        PaleGreen
+Mwm*activeBackground:  PaleGreen
