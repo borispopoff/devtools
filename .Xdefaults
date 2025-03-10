@@ -3,7 +3,5 @@ xterm*faceSize: 12
 xterm*reverseVideo: true
 emacs*faceName: JetBrains Mono NL
 emacs*faceSize: 12
-Mwm*foreground:        PaleGreen
-Mwm*activeBackground:  PaleGreen
-Mwm*background:        SteelBlue
-Mwm*activeForeground:  SteelBlue
+Mwm*activeBackground:  SteelBlue
+Mwm*background:        LightSteelBlue
