@@ -1,10 +1,18 @@
 {
     "telemetry.telemetryLevel": "off",
     "editor.fontFamily": "Jetbrains Mono NL Light",
+    // "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "extensions.ignoreRecommendations": true,
-    "workbench.colorTheme": "Visual Studio Light",
     "workbench.colorCustomizations": {
-        "editor.background": "#eaeae5"
-    }
+        "[*Dark*]":
+        {
+            "terminal.background": "#000000",
+            "terminal.foreground": "#eaeae5",
+            "editor.background": "#000000",
+            "editor.foreground": "#eaeae5",
+        }
+    },
+    "diffEditor.ignoreTrimWhitespace": true,
+    "workbench.colorTheme": "GitHub Light Colorblind (Beta)"
 }
