@@ -23,6 +23,7 @@
 ;; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ;; SOFTWARE.
 
+(electric-indent-mode -1)
 (global-font-lock-mode -1)
 
 ;; C/C++ Style Configuration
