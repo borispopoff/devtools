@@ -26,6 +26,26 @@
 (electric-indent-mode -1)
 (global-font-lock-mode -1)
 
+
+(defun lm nil
+  "light mode interactive"
+  (interactive)
+  (set-background-color "ivory")
+  (set-foreground-color "black"))
+
+(defun dm nil
+  "dark mode interactive"
+  (interactive)
+  (set-background-color "black")
+  (set-foreground-color "white"))
+
+(defun drm nil
+  "dark retro mode interactive"
+  (interactive)
+  (set-background-color "black")
+  (set-foreground-color "green"))
+
+
 ;; C/C++ Style Configuration
 (defun my-c-mode-common-hook ()
   ;; Allman style (braces on new lines)
