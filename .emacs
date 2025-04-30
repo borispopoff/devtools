@@ -24,8 +24,7 @@
 ;; SOFTWARE.
 
 (electric-indent-mode -1)
-(global-font-lock-mode -1)
-
+(which-function-mode t)
 
 (defun lm nil
   "light mode interactive"
