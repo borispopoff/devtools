@@ -45,8 +45,6 @@
   (set-background-color "black")
   (set-foreground-color "green"))
 
-(drm)
-
 ;; C/C++ Style Configuration
 (defun my-c-mode-common-hook ()
   ;; Allman style (braces on new lines)
