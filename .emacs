@@ -26,23 +26,9 @@
 (electric-indent-mode -1)
 (which-function-mode t)
 
-(defun lm nil
-  "light mode interactive"
-  (interactive)
-  (set-background-color "ivory")
-  (set-foreground-color "black"))
-
-(defun dm nil
-  "dark mode interactive"
-  (interactive)
-  (set-background-color "black")
-  (set-foreground-color "white"))
-
-(defun drm nil
-  "dark retro mode interactive"
-  (interactive)
-  (set-background-color "black")
-  (set-foreground-color "green"))
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq c-basic-offset 2)
 
 ;; C/C++ Style Configuration
 (defun my-c-mode-common-hook ()
