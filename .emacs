@@ -23,79 +23,9 @@
 ;; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ;; SOFTWARE.
 
-(electric-indent-mode -1)
-(which-function-mode t)
-
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (setq c-basic-offset 2)
-
-;; C/C++ Style Configuration
-(defun my-c-mode-common-hook ()
-  ;; Allman style (braces on new lines)
-  (c-set-style "bsd")  
-  
-  ;; Indent with 2 spaces instead of tabs
-  (setq-default indent-tabs-mode nil)
-  (setq-default tab-width 2)
-  (setq c-basic-offset 2)
-  
-  ;; Max instatement indent
-  (setq c-max-instatement-indent 70)
-  
-  ;; Padding around operators and keywords
-  (c-set-offset 'operator 'c-lineup-operator)
-  (c-set-offset 'arglist-intro '+)
-  (c-set-offset 'arglist-close 0)
-  
-  ;; Switch statement indentation
-  (c-set-offset 'case-label '+)
-  
-  ;; Keep one-line blocks and statements
-  (c-set-offset 'substatement-open 0)
-  
-  ;; Align pointer to name
-  (c-set-offset 'func-decl-cont 'c-lineup-java-throws))
-
-;; ;; ;; C indentation style
-;; ;; (add-hook 'c-mode-hook
-;; ;;           (lambda ()
-;; ;;             (c-set-style "linux")  ; or any other style like "k&r", "gnu", etc.
-;; ;;             (setq c-basic-offset 8)
-;; ;;             (setq tab-width 8)
-;; ;;             (setq indent-tabs-mode t)))
-;; ;; 
-;; ;; ;; C++ indentation style
-;; ;; (add-hook 'c++-mode-hook
-;; ;;           (lambda ()
-;; ;;             (c-set-style "stroustrup")  ; or any other style
-;; ;;             (setq c-basic-offset 4)
-;; ;;             (setq tab-width 4)
-;; ;;             (setq indent-tabs-mode nil)))
-
-;; ;; ;; Common C/C++ settings
-;; ;; (defun my-c-c++-common-hook ()
-;; ;;   (c-set-offset 'substatement-open 0)
-;; ;;   (c-set-offset 'brace-list-open 0))
-;; ;; 
-;; ;; ;; C specific settings
-;; ;; (defun my-c-mode-hook ()
-;; ;;   (c-set-style "linux")
-;; ;;   (setq c-basic-offset 8)
-;; ;;   (setq tab-width 8)
-;; ;;   (setq indent-tabs-mode t))
-;; ;; 
-;; ;; ;; C++ specific settings  
-;; ;; (defun my-c++-mode-hook ()
-;; ;;   (c-set-style "stroustrup") 
-;; ;;   (setq c-basic-offset 4)
-;; ;;   (setq tab-width 4)
-;; ;;   (setq indent-tabs-mode nil))
-;; ;; 
-;; ;; ;; Add hooks
-;; ;; (add-hook 'c-mode-common-hook 'my-c-c++-common-hook)
-;; ;; (add-hook 'c-mode-hook 'my-c-mode-hook)
-;; ;; (add-hook 'c++-mode-hook 'my-c++-mode-hook)
 
 ;; (setq default-input-method "MacOSX")
 (setq mac-command-modifier 'meta
@@ -125,7 +55,6 @@
 ;;   (interactive)
 ;;   (find-file "~/Documents/notes/notes.md")
 ;;   (find-file-other-window "~/Documents/notes/wip.md"))
-
 
 
 ;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
@@ -203,12 +132,12 @@
     (set-window-buffer w1 w2b)
     (set-window-buffer w2 w1b)))
 
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
-;; and `package-pinned-packages`. Most users will not need or want to do this.
-;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(package-initialize)
+;; (require 'package)
+;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; ;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; ;; and `package-pinned-packages`. Most users will not need or want to do this.
+;; ;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;; (package-initialize)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
