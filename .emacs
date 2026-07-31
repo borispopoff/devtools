@@ -23,9 +23,9 @@
 ;; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ;; SOFTWARE.
 
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 2)
-(setq c-basic-offset 2)
+;; (setq-default indent-tabs-mode nil)
+;; (setq-default tab-width 2)
+;; (setq c-basic-offset 2)
 
 ;; (setq default-input-method "MacOSX")
 (setq mac-command-modifier 'meta
