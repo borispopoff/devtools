@@ -1,5 +1,5 @@
 xterm*faceName: JetBrains Mono NL
 xterm*faceSize: 12
 xterm*reverseVideo: true
-emacs*faceName: JetBrains Mono NL
+emacs*faceName: Go
 emacs*faceSize: 12
