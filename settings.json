@@ -1,13 +1,11 @@
 {
     "telemetry.telemetryLevel": "off",
-    "editor.fontFamily": "JetBrains Mono NL ExtraLight",
-    "editor.fontSize": 16,
-    "workbench.colorTheme": "Default Light+",
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "clangd": false
-    },
+    "editor.fontFamily": "Go",
+    "terminal.integrated.fontFamily": "JetBrains Mono NL",
+    "editor.fontSize": 14,
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "ivory-tango",
+    "editor.guides.indentation": false,
 }
