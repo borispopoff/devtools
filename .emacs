@@ -151,7 +151,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Go" :foundry "outline" :slant normal :weight ultra-light :height 120 :width normal)))))
-
-(load-theme 'tango-plus t)
-
-
