@@ -1,13 +1,8 @@
 {
     "telemetry.telemetryLevel": "off",
-    "editor.fontFamily": "JetBrains Mono NL ExtraLight",
-    "editor.fontSize": 16,
-    "workbench.colorTheme": "Default Light+",
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "clangd": false
-    },
+    "editor.fontSize": 14,
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
+    "editor.guides.indentation": false,
 }
