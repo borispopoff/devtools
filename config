@@ -290,6 +290,7 @@ AddToMenu   MenuFvwmRoot "Fvwm" Title
 + "Emacs" Exec exec emacs
 + "Nautilus" Exec exec nautilus
 + "Dolphin" Exec exec dolphin
++ "KWrite" Exec exec kwrite
 + "Konsole" Exec exec konsole
 + "Firefox" Exec exec firefox
 + "&Programs%icons/programs.png%" Popup MenuPrograms
