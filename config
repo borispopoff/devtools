@@ -193,7 +193,7 @@ MoveThreshold 3
 
 # Sets the focus style to ClickToFocus and a mouse click
 # in a window will Raise it.
-Style * ClickToFocus, MouseFocusClickRaises
+Style * ClickToFocus, MouseFocusClickRaises, TileCascadePlacement
 
 # Default Font
 DefaultFont "xft:Sans:Bold:size=12:antialias=True"
