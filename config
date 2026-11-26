@@ -258,9 +258,9 @@ Style FvwmIdent WindowListSkip
 #      14 - FvwmIconMan Iconified Button
 ###########
 Colorset 0  fg #ffffff, bg #003c3c, hi, sh, Plain, NoShape
-Colorset 1  fg #000000, bg #8f9f8f, hi, sh, Plain, NoShape
+Colorset 1  fg grey50, bg grey75, hi gainsboro, sh, Plain, NoShape
 Colorset 2  fg white, bg steelblue, hi gainsboro, sh, Plain, NoShape
-Colorset 3  fg black, bg #4d4d4d, hi #676767, sh #303030, Plain, NoShape
+Colorset 3  fg grey50, bg grey75, hi gainsboro, sh #303030, Plain, NoShape
 Colorset 4  fg gainsboro, bg steelblue, hi gainsboro, sh #101010, Plain, NoShape
 Colorset 5  fg #000000, bg #ffffff, hi, sh, Plain, NoShape
 Colorset 6  fg #ffffff, bg #2d2d2d, hi, sh, Plain, NoShape
